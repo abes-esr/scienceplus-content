@@ -1,0 +1,226 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "sd",
+          "uri": "http://www.w3.org/ns/sparql-service-description#"
+        },
+        {
+          "name": "hub",
+          "uri": "http://hub.abes.fr/namespace/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "Graphe",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dcterms:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "Corpus",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#name",
+              "curie": "sd:name",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "Graphe",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dcterms:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "Description_fr",
+                "expression": "forNonBlank(value,v,value,'')",
+                "lang": "fr",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dcterms:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "Description_en",
+                "expression": "forNonBlank(value,v,v,'')",
+                "lang": "en",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/rightsHolder",
+              "curie": "dcterms:rightsHolder",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "dcterms_rightsHolder",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/licence",
+              "curie": "dcterms:licence",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "dcterms_license",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/rights",
+              "curie": "dcterms:rights",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "Conditions de réutilisation dcterms:rights",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+              "curie": "rdfs:seeAlso",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "seeAlso",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#NamedGraph",
+              "curie": "sd:NamedGraph"
+            }
+          ]
+        },
+        {
+          "nodeType": "resource",
+          "value": "http://scienceplus.abes.fr",
+          "links": [
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#endpoint",
+              "curie": "sd:endpoint",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://scienceplus.abes.fr/sparql",
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+              "curie": "sd:resultFormat",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://www.w3.org/ns/formats/Turtle",
+                "links": [],
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.w3.org/ns/sparql-service-description#Feature",
+                    "curie": "sd:Feature"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+              "curie": "sd:resultFormat",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://www.w3.org/ns/formats/SPARQL_Results_CSV",
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#availableGraphs",
+              "curie": "sd:availableGraphs",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://scienceplus.abes.fr/dataset",
+                "links": [],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#Service",
+              "curie": "sd:Service"
+            }
+          ]
+        },
+        {
+          "nodeType": "resource",
+          "value": "http://scienceplus.abes.fr/dataset",
+          "links": [
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#namedGraph",
+              "curie": "sd:namedGraph",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "Graphe",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/ns/sparql-service-description#Dataset",
+              "curie": "sd:Dataset"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  }
+]
