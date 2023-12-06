@@ -23,8 +23,8 @@
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
@@ -35,9 +35,9 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/bmj">
+	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/bmj"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>BMJ Journals ISTEX (origines-2013)</dcterms:title>
-	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/bmj"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/british-medical-journal-revues/"/>
@@ -64,9 +64,9 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/oup">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>OUP Journals ISTEX (origines-2010)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/oup"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/oxford-university-press-revues/"/>
@@ -88,8 +88,8 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/oup"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/oup"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/cup">
@@ -102,9 +102,8 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
@@ -112,8 +111,9 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
-	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
+	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
@@ -130,13 +130,16 @@
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/cambridge-university-press-revues/"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Feature"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
@@ -157,7 +160,9 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
@@ -166,14 +171,12 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/edp"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/edp"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/acs">
@@ -185,21 +188,24 @@
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/american-chemical-society/"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Feature"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
 	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/acs"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/acs/abstracts">
@@ -212,7 +218,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
@@ -222,8 +228,8 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
@@ -231,52 +237,25 @@
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://hub.abes.fr/referentiel/jel">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
-	<dcterms:title>JEL classification system (Journal of Economic Literature classification system)</dcterms:title>
-	<sd:name rdf:resource="http://hub.abes.fr/referentiel/jel"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
-	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Feature"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/referentiel/jel"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/cairn">
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>Cairn journals</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/cairn"/>
+	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
+	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.cairn.info/listerev.php"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Feature"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
@@ -284,9 +263,18 @@
 	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/cairn"/>
 </rdf:Description>
 
+<rdf:Description rdf:about="http://hub.abes.fr/referentiel/jel">
+	<sd:name rdf:resource="http://hub.abes.fr/referentiel/jel"/>
+	<dcterms:title>JEL classification system (Journal of Economic Literature classification system)</dcterms:title>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
+	<dcterms:description xml:lang="en">The JEL classification system was developed for use in the Journal of Economic Literature (JEL), and is a standard method of classifying scholarly literature in the field of economics.</dcterms:description>
+	<rdfs:seeAlso rdf:resource="http://linkeddatacatalog.dws.informatik.uni-mannheim.de/fr/dataset/jel-classification/resource/321904c4-74ca-4d2c-aef2-fab9f8822fb3"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
@@ -295,24 +283,24 @@
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/referentiel/jel"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/referentiel/msc2010-expanded">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>MSC2010 classification (Mathematics Subject Classification)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/referentiel/msc2010-expanded"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<rdfs:seeAlso rdf:resource="http://msc2010.org/resources/MSC/2010/info/"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
@@ -326,8 +314,8 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/referentiel/msc2010-expanded"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/referentiel/msc2010-expanded"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/referentiel/springer/product_market_codes">
@@ -339,9 +327,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
-	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
@@ -350,7 +336,9 @@
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
