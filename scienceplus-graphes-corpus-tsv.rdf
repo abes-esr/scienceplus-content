@@ -18,7 +18,6 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
@@ -27,6 +26,7 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
@@ -38,17 +38,16 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/bmj">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>BMJ Journals ISTEX (origines-2013)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/bmj"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/british-medical-journal-revues/"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
-	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
@@ -56,22 +55,23 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
 	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/bmj"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/oup">
-	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/oup"/>
-	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
-	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>OUP Journals ISTEX (origines-2010)</dcterms:title>
+	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/oup"/>
+	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
+	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/oxford-university-press-revues/"/>
 </rdf:Description>
 
@@ -91,14 +91,14 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
 	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/oup"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/cup">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>CUP Journals ISTEX (origines-2010)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/cup"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/cambridge-university-press-revues/"/>
@@ -125,17 +125,15 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/cup/abstracts">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>CUP Journals ISTEX (origines-2010) - Abstracts</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/cup/abstracts"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://creativecommons.org/licenses/by-nc/3.0/"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/cambridge-university-press-revues/"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
@@ -146,6 +144,8 @@
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
+	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
@@ -154,17 +154,17 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/edp">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>EDP Journals ISTEX (origines-2017)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/edp"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/edp-sciences-revues/"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
@@ -178,21 +178,20 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/edp"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/edp"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/edp/regu">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>EDP Journals (origines-...)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/edp/regu"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
-	<rdfs:seeAlso rdf:resource="https://edpsciences.org"/>
+	<rdfs:seeAlso rdf:resource="https://edpsciences.org/fr/"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
@@ -202,6 +201,7 @@
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
@@ -212,9 +212,9 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/acs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>ACS Journals ISTEX (origines-2008)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/acs"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/american-chemical-society/"/>
@@ -236,17 +236,22 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/acs"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/jats/acs"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/ejournals/jats/acs/abstracts">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>ACS Journals ISTEX (origines-2008) - Abstracts</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/ejournals/jats/acs/abstracts"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:rightsHolder rdf:resource="http://www.idref.fr/033702462/id"/>
 	<dcterms:licence rdf:resource="https://creativecommons.org/licenses/by-nc/3.0/"/>
 	<rdfs:seeAlso rdf:resource="https://www.licencesnationales.fr/liste-ressource/american-chemical-society/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://scienceplus.abes.fr">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.w3.org/ns/formats/Turtle">
@@ -255,10 +260,8 @@
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
-	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
+	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
@@ -277,6 +280,7 @@
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
 	<sd:endpoint rdf:resource="http://scienceplus.abes.fr/sparql"/>
 </rdf:Description>
 
@@ -285,14 +289,13 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr">
-	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
 	<sd:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
 	<sd:availableGraphs rdf:resource="http://scienceplus.abes.fr/dataset"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/cairn"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/ejournals/cairn"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/referentiel/jel">
@@ -324,9 +327,9 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/referentiel/msc2010-expanded">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>MSC2010 classification (Mathematics Subject Classification)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/referentiel/msc2010-expanded"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<rdfs:seeAlso rdf:resource="http://msc2010.org/resources/MSC/2010/info/"/>
 </rdf:Description>
 
@@ -351,9 +354,9 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://hub.abes.fr/referentiel/springer/product_market_codes">
+	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:title>Springer subject classification (PMC)</dcterms:title>
 	<sd:name rdf:resource="http://hub.abes.fr/referentiel/springer/product_market_codes"/>
-	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#NamedGraph"/>
 	<dcterms:description xml:lang="en">The Product Market Codes Taxonomy is a subject classification scheme used for classifying, grouping, and indexing content published by Springer Nature.</dcterms:description>
 	<rdfs:seeAlso rdf:resource="https://sn-scigraph.figshare.com/articles/dataset/Taxonomy_Product_Market_Codes/7376447"/>
 </rdf:Description>
@@ -374,8 +377,8 @@
 </rdf:Description>
 
 <rdf:Description rdf:about="http://scienceplus.abes.fr/dataset">
-	<sd:namedGraph rdf:resource="http://hub.abes.fr/referentiel/springer/product_market_codes"/>
 	<rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Dataset"/>
+	<sd:namedGraph rdf:resource="http://hub.abes.fr/referentiel/springer/product_market_codes"/>
 </rdf:Description>
 
 </rdf:RDF>
